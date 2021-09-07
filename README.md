@@ -19,7 +19,7 @@ Appointment system is part of training for interns at Jeevee Health.
 3. SQLAlchemy
 4. Marshmallow
 5. Flask-Restful
-6. 
+6. Flask-Logger
 
 
 ### Deployment
