@@ -32,7 +32,6 @@ Application should be deployed to any cloud provider like: DigitalOcean, Heroku
 4. Effort
 
 ### Important
-- Don't try to cheat
-- Goal is to learn
+- Avoid cheating, You are here to learn
 
 
