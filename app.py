@@ -1,7 +1,7 @@
 from flask import Flask
 
-from api.v1 import v1
-from api.v2 import v2
+from v1 import v1
+from v2 import v2
 
 
 def create_app():

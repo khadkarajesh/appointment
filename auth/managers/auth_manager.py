@@ -1,4 +1,4 @@
-from api.db import session
+from db import session
 
 
 def register_user(user):

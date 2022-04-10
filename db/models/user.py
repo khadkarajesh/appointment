@@ -1,6 +1,6 @@
 import sqlalchemy as sa
 
-from api.db import BaseModel
+from db import BaseModel
 
 
 class User(BaseModel):
