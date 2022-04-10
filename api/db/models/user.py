@@ -1,7 +1,6 @@
-import sqlalchemy
-
-from api.db import BaseModel, session
 import sqlalchemy as sa
+
+from api.db import BaseModel
 
 
 class User(BaseModel):

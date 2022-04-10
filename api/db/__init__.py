@@ -2,7 +2,7 @@ import uuid
 
 import sqlalchemy as sa
 from sqlalchemy.ext.declarative import declarative_base
-from sqlalchemy.orm import scoped_session, sessionmaker, relationship, backref
+from sqlalchemy.orm import scoped_session, sessionmaker
 
 engine = sa.create_engine("sqlite:///:memory:testdb")
 session = scoped_session(sessionmaker(bind=engine))
@@ -17,5 +17,4 @@ class BaseModel(Base):
 
 
 def init_db():
-    from api.db.models.user import User
     Base.metadata.create_all(bind=engine)

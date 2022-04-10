@@ -7,6 +7,11 @@ from api.db import session
 
 
 class SignupResource(Resource):
-    def post(self):
+    @classmethod
+    def get(cls):
+        return {'testing': 'get'}
+
+    @classmethod
+    def post(cls):
         user = UserSchema().load(request.get_json(), session=session)
         return register_user(user)
