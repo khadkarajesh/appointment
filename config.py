@@ -25,6 +25,7 @@ class ProductionConfig(Config):
 class DevelopmentConfig(Config):
     DB_SERVER = 'localhost'
     DEBUG = True
+    SQLALCHEMY_TRACK_MODIFICATIONS = False
 
     def __str__(self):
         print(f"{self.SQLALCHEMY_DATABASE_URI}")
