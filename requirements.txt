@@ -6,3 +6,4 @@ marshmallow
 pytest
 python-dotenv
 SQLAlchemy
+Flask-Migrate

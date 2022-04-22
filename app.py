@@ -4,7 +4,7 @@ from dotenv import load_dotenv
 from flask import Flask
 from werkzeug.utils import import_string
 
-from db import db
+from db import db, migrate
 from v1 import v1
 from v2 import v2
 
@@ -17,6 +17,8 @@ def create_app(config: str):
     app.register_blueprint(v1, url_prefix="/api/v1")
     app.register_blueprint(v2, url_prefix='/api/v2')
     db.init_app(app)
+    from db.models.user import User
+    migrate.init_app(app, db)
     with app.app_context():
         db.create_all()
     return app
