@@ -1,0 +1,9 @@
+Flask-RESTful
+Flask-SQLAlchemy
+Flask
+marshmallow-sqlalchemy
+marshmallow
+pytest
+python-dotenv
+SQLAlchemy
+Flask-Migrate

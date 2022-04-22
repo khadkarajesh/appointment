@@ -1,7 +1,7 @@
 from flask import Blueprint
 from flask_restful import Resource, Api
 
-from api.auth import auth
+from auth import auth
 
 
 class V1Resource(Resource):
